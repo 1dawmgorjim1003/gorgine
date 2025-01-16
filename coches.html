@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GORGINE</title>
+    <link rel="stylesheet" href="CSS/index.css" type="text/css">
+    <style>
+        /*Edicion CSS de la lista del cuerpo, un valor para tener el footer bien colocado y el menu vertical*/
+        #Escondido{
+            color: rgba(45, 37, 41, 1);
+        }
+        .vertical {
+        list-style-type: none;
+        margin: 0px;
+        padding: 20px;
+        width: 200px;
+        overflow: hidden;
+        }
+
+            .vertical li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 19px;
+            }
+            .vertical li a:hover {
+            background-color: #e17777;
+            color: white;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!--Cabecera de la web-->
+    <div class="titulo">
+        <h1 align="center">COCHES</h1>
+    </div>
+    <hr>
+    <!-- Menu vertical de la web-->
+    <div class="menu">
+        <h1 align="center">MENÚ</h1>
+        <hr>
+        <table class="menu_tabla" align="center">
+            <tr>
+                <td>
+                    <ol class="vertical">
+                        <li><a href="index.html">VOLVER A INICIO</a></li>
+                        <li><a href="comingsoon.html">COMING SOON...</a></li>
+                        <li><a href="agradecimientos.html">AGRADECIMIENTOS</a></li>
+                        <li><a href="uneteanostros.html">ÚNETE A NOSOTROS</a></li>
+                        <li><a href="copyrigth.html">COPYRIGHT</a></li>
+                        <li><a href="mapaweb.html">MAPA WEB</a></li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- Cuerpo principal de la web donde se visualiza el contenido-->
+    <div class="cuerpo">
+        <h1 align="center">ADENTRÁTE EN NUESTRAS CATEGORIAS</h1>
+        <hr>
+        <table border="1" align="center">
+            <tr align="center">
+                <td>
+                    <a href="musclecars.html"><img src="IMGS/muscle car.jpg" width="350" height="200"><br>MUSCLE CARS</a>
+                </td>
+                <td>
+                    <a href="superdeportivos.html"><img src="IMGS/superdeportivo.jpg" width="350" height="200"><br>SUPERDEPORTIVOS</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--Propiedad escondido y footer, para mantenerlo siempre abajo del cuerpo.-->
+    <p id="Escondido">Escondido</p>
+    <footer align="center">Realizado por Miguel Gordon Jiménez 1ºDAW</footer>
+</body>
+</html>

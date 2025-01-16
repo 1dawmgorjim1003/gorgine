@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <title>GORGINE</title>
+    <link rel="stylesheet" href="CSS/index.css" type="text/css">
+    <style>
+        /*Edicion CSS de la lista del cuerpo, un valor para tener el footer bien colocado y el menu vertical*/
+        li{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+        #Escondido{
+            color: rgba(45, 37, 41, 1);
+        }
+        .vertical {
+        list-style-type: none;
+        margin: 0px;
+        padding: 20px;
+        width: 200px;
+        overflow: hidden;
+        }
+
+            .vertical li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 19px;
+            }
+            .vertical li a:hover {
+            background-color: #e17777;
+            color: white;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!--Cabecera de la web-->
+    <div class="titulo">
+        <h1 align="center">GORGINE</h1>
+    </div>
+    <hr>
+    <!-- Menu vertical de la web-->
+    <div class="menu">
+        <h1 align="center">MENÚ</h1>
+        <hr>
+        <table class="menu_tabla" align="center">
+            <tr>
+                <td>
+                    <ol class="vertical">
+                        <li><a href="coches.html">COCHES</a></li>
+                        <li><a href="comingsoon.html">COMING SOON...</a></li>
+                        <li><a href="agradecimientos.html">AGRADECIMIENTOS</a></li>
+                        <li><a href="uneteanostros.html">ÚNETE A NOSOTROS</a></li>
+                        <li><a href="copyrigth.html">COPYRIGHT</a></li>
+                        <li><a href="mapaweb.html">MAPA WEB</a></li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- Cuerpo principal de la web donde se visualiza el contenido-->
+    <div class="cuerpo">
+        <h1 align="center">BIENVENIDO/A</h1>
+        <hr>
+        <p align="center">
+
+            ¡Bienvenido a Gorgine! 🚗💨 Tu destino definitivo para explorar todo lo relacionado con el mundo del motor. Aquí encontrarás un lugar creado para los verdaderos amantes de los coches, donde cada curva y cada motor tiene una historia que contar.
+            
+            En Gorgine, desglosamos las categorías más emocionantes del mundo automotriz:<br>
+            <ul>
+                <li>Deportivos y supercoches: Velocidad, potencia y diseño que dejan sin aliento.<br></li>
+                <li>SUV y todoterrenos: Máquinas diseñadas para la aventura, tanto en la ciudad como fuera de ella.<br></li>
+                <li>Eléctricos y sostenibilidad: Descubre cómo la innovación está transformando la conducción.<br></li>
+                <li>Clásicos y de colección: Un tributo a las joyas del pasado que siguen marcando tendencia.<br></li>
+            </ul>
+        </p>
+        <p>Además, te ofrecemos análisis detallados, comparativas, y las últimas novedades del sector para que siempre estés al día. Ya seas un experto, un curioso o un apasionado que vive con el motor en el corazón, en Gorgine encontrarás inspiración, información y todo lo que necesitas para alimentar tu pasión por los coches.
+            
+            ¡Arranca motores con nosotros y disfruta del viaje! 🚘</p>
+        <br>
+        <!--Imagen de presentacion, que está dentro del div del cuerpo de la web-->
+        <div align="center">
+            <img style="opacity: 80%; border-radius: 10px;" src="IMGS/Findex.jpg" width="550px" height="300px"/>
+        </div>
+    </div>
+    <!--Propiedad escondido y footer, para mantenerlo siempre abajo del cuerpo.-->
+    <p id="Escondido">Escondido</p>
+    <footer align="center">Realizado por Miguel Gordon Jiménez 1ºDAW</footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página en Mantenimiento</title>
+    <style>
+        /*Edición CSS: Configuración de fondo de la web, y del contenedor que tiene la animación*/
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(45, 37, 41, 1);
+            font-family: 'Times New Roman', Times, serif;
+            overflow: hidden;
+        }
+
+        .maintenance-box {
+            position: absolute;
+            top: 50%;
+            left: -50%;
+            transform: translateY(-50%);
+            padding: 20px 40px;
+            background-color: rgba(221, 83, 88, 1);
+            color: #000000;
+            font-size: 18px;
+            font-weight: bold;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            animation: slide 10s linear infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                left: -50%;
+            }
+            50% {
+                left: 50%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Contenedor con aviso de mantenimiento y posibilidad de volver al inicio-->
+    <div class="maintenance-box">
+        ⚠️ Página en Mantenimiento. ¡Volvemos pronto! ⚠️
+        <br>
+        <h4 align="center"><a href="index.html"><strong>VOLVER A INICIO</strong></a></h4>
+    </div>
+</body>
+</html>

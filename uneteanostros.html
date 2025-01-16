@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GORGINE</title>
+    <link rel="stylesheet" href="CSS/index.css" type="text/css">
+    <style>
+        /*Edicion CSS de la lista del cuerpo, un valor para tener el footer bien colocado y el menu vertical*/
+        li{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+        #Escondido{
+            color: rgba(45, 37, 41, 1);
+        }
+        .vertical {
+        list-style-type: none;
+        margin: 0px;
+        padding: 20px;
+        width: 200px;
+        overflow: hidden;
+        }
+
+            .vertical li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 19px;
+            }
+            .vertical li a:hover {
+            background-color: #e17777;
+            color: white;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!--Cabecera de la web-->
+    <div class="titulo">
+        <h1 align="center">GORGINE</h1>
+    </div>
+    <hr>
+    <!-- Menu vertical de la web-->
+    <div class="menu">
+        <h1 align="center">MENÚ</h1>
+        <hr>
+        <table class="menu_tabla" align="center">
+            <tr>
+                <td>
+                    <ol class="vertical">
+                        <li><a href="coches.html">COCHES</a></li>
+                        <li><a href="comingsoon.html">COMING SOON...</a></li>
+                        <li><a href="agradecimientos.html">AGRADECIMIENTOS</a></li>
+                        <li><a href="index.html">VOLVER A INICIO</a></li>
+                        <li><a href="copyrigth.html">COPYRIGHT</a></li>
+                        <li><a href="mapaweb.html">MAPA WEB</a></li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- Cuerpo principal de la web donde se visualiza el contenido-->
+    <div class="cuerpo">
+        <h1 align="center">¿INTERESADO EN UNIRTE A NOSOTROS? RELLENA ESTE FORMULARIO</h1>
+        <hr>
+        <table align="center" border="4" id="tabla1" style="padding: 20px; border-color: black;background-color: #898484;">
+            <tr>
+                <td style="padding: 10px; background-color: #a5a5a4">
+                    <form>
+                        <hr>
+                        <h2 class="datper" align="center" style="background-color: rgba(221, 83, 88, 1);">DATOS PERSONALES</h2>
+                        <hr>
+                        <p><label for="nombre">Escribe tu nombre y apellidos: </label><input type="text" id="nombre" name="nombre" size="30" maxlength="30"/></p</p>
+                        <p><label for="direccion">Escribe tu dirección:</label></p><p><label for="direccion">Calle: </label><input type="text" id="numero" name="text" size="30" maxlength="30"/></p</p><p><label for="direccion">Número: </label><input type="number" id="numero" name="numero" size="10" maxlength="30"/></p</p><p><label for="direccion">Piso: </label><input type="number" id="piso" name="piso" size="10" maxlength="30"/></p</p><p><label for="direccion">Letra: </label><input type="text" id="letra" name="letra" size="10" maxlength="30"/></p</p><p><label for="direccion">Código postal: </label><input type="number" id="provincia" name="provincia" size="10" maxlength="15"/></p</p>
+                        <p><label for="telf">Escribe tu número de teléfono: </label><input type="number" id="telf" name="telf" size="9" maxlength="9"/></p</p>
+                        <p><label for="correo">Escribe tu correo electrónico: </label><input type="text" id="correo" name="correo" size="30" maxlength="30"/></p></p>
+                        <p>Suba una imagen suya:</p>
+                        <input type="file" name="imagen1"/>
+                        <p></p>
+                        <hr>
+                        <h2 id="dataca" align="center" style="background-color: rgba(221, 83, 88, 1);">DATOS ACADÉMICOS</h2>
+                        <hr>
+                        <p>Seleccione los estudios que ha completado con éxito a día de hoy: </p>
+                        <p>
+                            <input type="checkbox" id="primaria" name="primaria">
+                            <label for="primaria">ED. PRIMARIA</label><br/>
+                            <input type="checkbox" id="ESO" name="ESO">
+                            <label for="ESO">ESO</label><br/>
+                            <input type="checkbox" id="bachillerato" name="bachillerato">
+                            <label for="bachillerato">BACHILLERATO</label><br/>
+                            <input type="checkbox" id="CFGM" name="CFGM">
+                            <label for="CFGM">CFGM</label><br/>
+                            <input type="checkbox" id="CFGS" name="CFGS">
+                            <label for="CFGS">CFGS</label><br/>
+                            <input type="checkbox" id="educacionuniversitaria" name="educacionuniversitaria">
+                            <label for="educacionuniversitaria">EDUCACIÓN UNIVERSITARIA</label><br/>
+                            <input type="checkbox" id="masterpostgrado" name="masterpostgrado">
+                            <label for="masterpostgrado">MASTER POSTGRADO</label><br/>
+                        </p>
+                    </form>
+                </td>
+                <td align="center" style="padding: 10px; background-color: #a5a5a4;">
+                    <hr>    
+                    <h2 align="center" style="background-color: rgba(221, 83, 88, 1);">EXPERIENCIA PROFESIONAL</h2>
+                        <hr>
+                        <p><label for="experiencia">Seleccione en que sector laboral tiene más experiencia: </label></p>
+                            <select id="experiencia" name="experiencia">
+                                <option>AGRÍCOLA Y MINERO</option>
+                                <option>INDUSTRIAL</option>
+                                <option>COMERCIO MINORISTA</option>
+                                <option>EDUCACIÓN</option>
+                                <option>SALUD</option>
+                                <option>TELECOMUNICACIONES</option>
+            
+                            </select>
+                        <hr>
+                        <h2 align="center" style="background-color: rgba(221, 83, 88, 1);">IDIOMAS</h2>
+                        <hr>
+                        <p>Seleccione los idiomas que hable a continuación, <br>además del tipo de nivel que posee: </p>
+                        <p>Inglés: <input type="button" id="bajo" name="bajo">
+                            <label for="bajo">Bajo</label>
+                            <input type="button" id="medio" name="medio">
+                            <label for="medio">Medio</label>
+                            <input type="button" id="Alto" name="Alto">
+                            <label for="alto">Alto</label></p>
+                        <p>Francés: <input type="button" id="bajo" name="bajo">
+                            <label for="bajo">Bajo</label>
+                            <input type="button" id="medio" name="medio">
+                            <label for="medio">Medio</label>
+                            <input type="button" id="Alto" name="Alto">
+                            <label for="alto">Alto</label></p>
+                        <p>Otro: </label><input type="text" id="otro" name="otro" size="30" maxlength="30"><br><input type="button" id="bajo" name="bajo">
+                            <label for="bajo">Bajo</label>
+                            <input type="button" id="medio" name="medio">
+                            <label for="medio">Medio</label>
+                            <input type="button" id="Alto" name="Alto">
+                            <label for="alto">Alto</label></p>
+                        <hr>
+                        <h2 align="center" style="background-color: rgba(221, 83, 88, 1);">APTITUDES PERSONALES</h2>
+                        <hr>
+                        <p><label for="aptitudes">Escribe un párrafo sobre sus aptitudes personales: </label></p>
+                        <p>
+                        <textarea id="aptitudes" name="aptitudes" rows="3" cols="40"></textarea>
+                        </p>
+                        <hr>
+                        <h2 align="center" style="background-color: rgba(221, 83, 88, 1);">ENVIAR Y REINICIAR FORMULARIO</h2>
+                        <hr>
+                        <p>Botones para el envio y reinicio de formulario: </p>
+                            <input type="submit"value="Enviar formulario">
+                            <input type="reset" value="Reiniciar formulario">
+                        <p></p>
+                </td>
+            </tr>
+        </table>
+        <!--Uso de la etiqueta oninput, fuera del formulario anterior-->
+        <h1>Autoevaluación</h1>
+        <h3>Indique del 1 al 10 como se evalua a sí mismo:</h3>    
+        <form oninput="x.value=parseInt(a.value * 2 * 3.1416);z.value=parseInt(a.value)">    
+            Mueva el cursor:    
+            <input type="range" id="a" name="a" value="1" min="1" max="10">    
+            <br><br>    
+            Número escogido: <output name="z" for="a">1</output>
+            <br><br>    
+            Púntuación resultante: <output name="x" for="a">6.2832</output>  
+        </form>
+        <p style="text-decoration:overline;"><sub>Esta autoevaluación es de carácter privativo y de uso personal para la propia evaluación de la empresa. No influye en el proceso de selección</sub></p>
+    </div>
+    <!--Propiedad escondido y footer, para mantenerlo siempre abajo del cuerpo.-->
+    <p id="Escondido">Escondido</p>
+    <footer align="center">Realizado por Miguel Gordon Jiménez 1ºDAW</footer>
+</body>
+</html>
